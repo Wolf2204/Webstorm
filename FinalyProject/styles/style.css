@@ -1,5 +1,5 @@
 html {
-  background: url(../images/fireball.jpg) no-repeat;
+  background: url(../images/fireball.jpg);
   background-size: 100%;
   font-family: "Arial", sans-serif;
 }
@@ -36,7 +36,7 @@ header ul {
   border-radius: 10px;
   padding-left: 320px;
   margin-left: -15px;
-  padding-right: 260px;
+  padding-right: 410px;
 }
 header ul li {
   width: 150px;
@@ -57,16 +57,25 @@ header ul li div:hover {
   color: black;
   font-weight: bold;
 }
+footer {
+  text-align: center;
+  background: linear-gradient(#4d4d4d, #808080, #4d4d4d);
+  color: white;
+  font-size: 11pt;
+  height: 30px;
+  padding-top: 15px;
+}
 section#content {
-  margin: 0 10px 10px 20px;
-  width: 70%;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px black;
+  margin: 0 auto 10px auto;
+  width: 98%;
   text-align: justify;
   display: flex;
 }
 section#content > div {
   display: flex;
+  width: 70%;
+  box-shadow: 0 3px 10px black;
+  border-radius: 10px;
 }
 section#content > div div {
   width: 82%;
@@ -76,6 +85,7 @@ section#content h2 {
 }
 section#content p {
   margin: 5px 10px 10px 20px;
+  text-indent: 20px;
 }
 section#content h3 {
   margin-left: 20px;
@@ -93,11 +103,13 @@ section#content .certificates img {
   margin: 20px 0 10px 20px;
   height: 170px;
 }
-footer {
-  text-align: center;
-  background: linear-gradient(#4d4d4d, #808080, #4d4d4d);
-  color: white;
-  font-size: 11pt;
-  height: 30px;
-  padding-top: 15px;
+section#content section {
+  width: 30%;
+  margin-left: 30px;
+}
+section#content section video {
+  border: 1px solid black;
+  height: 200px;
+  box-shadow: 1px 3px 10px grey;
+  margin-bottom: 20px;
 }

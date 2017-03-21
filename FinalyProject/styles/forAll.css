@@ -1,0 +1,67 @@
+html {
+  background: url(../images/fireball.jpg);
+  background-size: 100%;
+  font-family: "Arial", sans-serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  width: 1300px;
+  margin: 30px auto 10px auto;
+  background: lightgray;
+}
+header {
+  display: flex;
+  align-content: center;
+  background-size: 100%;
+}
+header div {
+  display: flex;
+  flex-direction: column;
+}
+header div.logo {
+  z-index: 1;
+  width: 0;
+  margin-top: -25px;
+}
+header div.menu {
+  margin-top: 40px;
+}
+header ul {
+  display: flex;
+  background: linear-gradient(#292929, #7a7a7a, #292929);
+  height: 40px;
+  justify-items: center;
+  list-style-type: none;
+  border-radius: 10px;
+  padding-left: 320px;
+  margin-left: -15px;
+  padding-right: 410px;
+}
+header ul li {
+  width: 150px;
+  text-align: center;
+  height: 100%;
+  margin: auto;
+}
+header ul li a {
+  text-decoration: none;
+  color: white;
+}
+header ul li div {
+  height: 30px;
+  padding-top: 10px;
+}
+header ul li div:hover {
+  background: linear-gradient(#535353, #a1a1a1, #535353);
+  color: black;
+  font-weight: bold;
+}
+footer {
+  text-align: center;
+  background: linear-gradient(#4d4d4d, #808080, #4d4d4d);
+  color: white;
+  font-size: 11pt;
+  height: 30px;
+  padding-top: 15px;
+}

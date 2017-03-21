@@ -1,87 +1,15 @@
-html {
-  background: url(../images/fireball.jpg) no-repeat;
-  background-size: 100%;
-  font-family: "Arial", sans-serif;
-}
-
-body {
-  display: flex;
-  flex-direction: column;
-  width: 1300px;
-  margin: 30px auto 10px auto;
-  background: lightgray;
-}
-
-header {
-  display: flex;
-  align-content: center;
-
-  background-size: 100%;
-
-  div {
-    display: flex;
-    flex-direction: column;
-
-    &.logo {
-      z-index: 1;
-      width: 0;
-      margin-top: -25px;
-
-    }
-    &.menu {
-      margin-top: 40px;
-    }
-
-  }
-
-  ul {
-    display: flex;
-    background: linear-gradient(#292929, #7a7a7a, #292929);
-    height: 40px;
-    justify-items: center;
-    list-style-type: none;
-    border-radius: 10px;
-    padding-left: 320px;
-    margin-left: -15px;
-    padding-right: 260px;
-
-    li {
-      width: 150px;
-      text-align: center;
-      height: 100%;
-      margin: auto;
-
-      a {
-        text-decoration: none;
-        color: white;
-
-      }
-      div {
-        height: 30px;
-        padding-top: 10px;
-
-        &:hover {
-          background: linear-gradient(#535353, #a1a1a1, #535353);
-          color: black;
-          font-weight: bold;
-        }
-      }
-
-    }
-
-  }
-}
+@import "forAll";
 
 section#content {
-  margin: 0 10px 10px 20px;
-  width: 70%;
-  border-radius: 10px;
-  box-shadow: 0 3px 10px black;
+  margin: 0 auto 10px auto;
+  width: 98%;
   text-align: justify;
   display: flex;
   > div {
     display: flex;
-
+    width: 70%;
+    box-shadow: 0 3px 10px black;
+    border-radius: 10px;
     div {
       width: 82%;
     }
@@ -92,6 +20,7 @@ section#content {
   }
   p {
     margin: 5px 10px 10px 20px;
+    text-indent: 20px;
   }
   h3 {
     margin-left: 20px;
@@ -111,17 +40,22 @@ section#content {
       height: 170px;
     }
   }
+
+  section {
+    width: 30%;
+    margin-left: 30px;
+    video {
+      border: 1px solid black;
+      height: 200px;
+      box-shadow: 1px 3px 10px grey;
+      margin-bottom: 20px;
+
+
+    }
+  }
 }
 
-footer {
-  text-align: center;
-  background: linear-gradient(#4d4d4d, #808080, #4d4d4d);
-  color: white;
-  font-size: 11pt;
-  height: 30px;
-  padding-top: 15px;
 
-}
 
 
 
