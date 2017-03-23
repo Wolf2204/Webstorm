@@ -1,6 +1,6 @@
 html {
-  background: url(../images/fireball.jpg);
-  background-size: 100%;
+  background: url(../images/fireball.jpg) no-repeat fixed;
+  background-size: cover;
   font-family: "Arial", sans-serif;
 }
 body {

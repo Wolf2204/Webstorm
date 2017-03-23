@@ -74,51 +74,24 @@ section#content {
   box-shadow: 0 3px 10px black;
   border-radius: 10px;
 }
+section#content div {
+  margin: 5px 20px 10px 20px;
+}
+section#content div#map {
+  margin-left: 30px;
+  min-height: 400px;
+}
+section#content div > section {
+  text-align: center;
+}
 section#content h3 {
   text-align: center;
   text-shadow: 1px 1px 3px grey;
 }
-section#content h4 {
-  text-shadow: 1px 1px 3px grey;
-}
-section#content img {
-  float: right;
-  width: 300px;
-  margin: 0 10px 0 10px;
-}
 section#content p {
   text-indent: 20px;
 }
-section#content div {
-  margin: 5px 20px 10px 20px;
-}
-section#content iframe {
-  margin: 0 auto 0 auto;
-  border: none;
-  box-shadow: 2px 2px 5px black;
-}
-section#content table {
-  width: 600px;
-  border: 1px solid black;
-  background-color: #a66b46;
-}
-section#content table thead {
-  font-weight: bold;
-  background-color: grey;
-}
-section#content table tbody {
-  background-color: orangered;
-}
-section#content table td {
-  border: 1px solid black;
-  padding-left: 5px;
-}
-section#content img.image {
-  width: 100%;
-  margin: 0 0 20px 0;
-}
-section#content #graph {
-  width: 800px;
-  float: none;
-  margin: 0 5px 5px 0;
+section#content img#photo {
+  float: left;
+  margin: 0 10px 0 10px;
 }

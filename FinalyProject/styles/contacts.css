@@ -70,55 +70,39 @@ section#content {
   width: 98%;
   text-align: justify;
   display: flex;
-  flex-direction: column;
   box-shadow: 0 3px 10px black;
   border-radius: 10px;
-}
-section#content h3 {
-  text-align: center;
-  text-shadow: 1px 1px 3px grey;
-}
-section#content h4 {
-  text-shadow: 1px 1px 3px grey;
-}
-section#content img {
-  float: right;
-  width: 300px;
-  margin: 0 10px 0 10px;
-}
-section#content p {
-  text-indent: 20px;
 }
 section#content div {
   margin: 5px 20px 10px 20px;
 }
-section#content iframe {
-  margin: 0 auto 0 auto;
-  border: none;
-  box-shadow: 2px 2px 5px black;
+section#content div#map {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  min-height: 410px;
+  min-width: 608px;
 }
-section#content table {
-  width: 600px;
-  border: 1px solid black;
-  background-color: #a66b46;
+section#content div:last-child {
+  margin-left: 80px;
 }
-section#content table thead {
-  font-weight: bold;
-  background-color: grey;
+section#content h3 {
+  text-shadow: 1px 1px 3px grey;
 }
-section#content table tbody {
-  background-color: orangered;
+section#content p {
+  text-indent: 20px;
+  margin-top: 5px;
+  margin-bottom: 5px;
 }
-section#content table td {
-  border: 1px solid black;
-  padding-left: 5px;
+section#content h4 {
+  text-indent: 20px;
+  margin-bottom: 5px;
 }
-section#content img.image {
-  width: 100%;
-  margin: 0 0 20px 0;
+section#content ul {
+  padding-left: 20px;
 }
-section#content #graph {
-  width: 800px;
-  float: none;
-  margin: 0 5px 5px 0;
+section#content ul li {
+  list-style-type: none;
+}
+section#content ul:last-child {
+  font-family: "Segoe UI", sans-serif;
 }
