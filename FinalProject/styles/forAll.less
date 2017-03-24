@@ -12,11 +12,12 @@ body {
   background: lightgray;
 }
 
-
 header {
   display: flex;
   align-content: center;
-  background-size: 100%;
+  p {
+    display: none;
+  }
 
   div {
     display: flex;
@@ -79,5 +80,60 @@ footer {
   font-size: 11pt;
   height: 30px;
   padding-top: 15px;
+
+}
+
+@media all and (max-width: 640px) {
+
+  body {
+    width: 100%;
+    margin: 0;
+
+  }
+
+  header {
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 0;
+    p {
+      display: block;
+      width: 100%;
+      text-align: center;
+      font-size: 20pt;
+      font-weight: bolder;
+      margin: 10px 0 0 0;
+    }
+    div {
+      display: block;
+      width: 100%;
+
+      &.logo {
+        display: none;
+
+      }
+      &.menu {
+        margin-top: 0;
+
+      }
+
+    }
+
+    ul {
+      flex-direction: column;
+      border-radius: 0;
+      padding: 0;
+      height: 160px;
+
+      li {
+        width: 100%;
+        text-align: center;
+        height: 40px;
+        margin: 0;
+
+      }
+
+    }
+  }
 
 }

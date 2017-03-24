@@ -30,8 +30,34 @@ section#content {
     float: left;
     margin: 0 10px 0 10px;
   }
+  div#map1 {
+    display: none;
+  }
 
+}
 
-
+@media all and (max-width: 640px) {
+  section#content {
+    width: 95%;
+    div {
+      margin-left: 20px;
+      margin-right: 20px;
+      img#photo {
+        margin-left: 0;
+      }
+      > section img {
+        width: 100%;
+      }
+    }
+    div#map {
+      display: none;
+    }
+    div#map1 {
+      display: block;
+      img {
+        width: 100%;
+      }
+    }
+  }
 
 }

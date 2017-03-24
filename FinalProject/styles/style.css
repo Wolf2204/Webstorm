@@ -13,7 +13,9 @@ body {
 header {
   display: flex;
   align-content: center;
-  background-size: 100%;
+}
+header p {
+  display: none;
 }
 header div {
   display: flex;
@@ -65,6 +67,48 @@ footer {
   height: 30px;
   padding-top: 15px;
 }
+@media all and (max-width: 640px) {
+  body {
+    width: 100%;
+    margin: 0;
+  }
+  header {
+    flex-direction: column;
+    margin-bottom: 10px;
+    width: 100%;
+    margin-top: 0;
+  }
+  header p {
+    display: block;
+    width: 100%;
+    text-align: center;
+    font-size: 20pt;
+    font-weight: bolder;
+    margin: 10px 0 0 0;
+  }
+  header div {
+    display: block;
+    width: 100%;
+  }
+  header div.logo {
+    display: none;
+  }
+  header div.menu {
+    margin-top: 0;
+  }
+  header ul {
+    flex-direction: column;
+    border-radius: 0;
+    padding: 0;
+    height: 160px;
+  }
+  header ul li {
+    width: 100%;
+    text-align: center;
+    height: 40px;
+    margin: 0;
+  }
+}
 section#content {
   margin: 0 auto 10px auto;
   width: 98%;
@@ -112,4 +156,55 @@ section#content section video {
   height: 200px;
   box-shadow: 1px 3px 10px grey;
   margin-bottom: 20px;
+}
+@media all and (max-width: 640px) {
+  section#content {
+    flex-direction: column;
+    width: 95%;
+  }
+  section#content div {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+  }
+  section#content div div {
+    width: 100%;
+    margin-left: 0;
+  }
+  section#content h2 {
+    margin-left: 10px;
+  }
+  section#content p {
+    margin-left: 10px;
+  }
+  section#content h3 {
+    margin-left: 10px;
+  }
+  section#content ol {
+    margin-right: 10px;
+  }
+  section#content ul li {
+    margin-right: 10px;
+  }
+  section#content .certificates {
+    display: none;
+  }
+  section#content section {
+    width: 100%;
+    margin-left: 0;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+  section#content section div {
+    margin: 0 auto 0 auto;
+    width: auto;
+  }
+  section#content section video {
+    border: 1px solid black;
+    width: 100%;
+    box-shadow: 1px 3px 10px grey;
+    margin-bottom: 20px;
+  }
 }

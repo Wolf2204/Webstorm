@@ -12,6 +12,7 @@ section#content {
     border-radius: 10px;
     div {
       width: 82%;
+
     }
   }
 
@@ -50,9 +51,69 @@ section#content {
       box-shadow: 1px 3px 10px grey;
       margin-bottom: 20px;
 
-
     }
   }
+}
+
+@media all and (max-width: 640px) {
+  section#content {
+    flex-direction: column;
+    width: 95%;
+
+    div {
+      width: 100%;
+      margin-right: auto;
+      margin-left: auto;
+
+      div {
+        width: 100%;
+        margin-left: 0;
+      }
+    }
+    h2 {
+      margin-left: 10px;
+    }
+    p {
+      margin-left: 10px;
+
+    }
+    h3 {
+      margin-left: 10px;
+          }
+    ol {
+      margin-right: 10px;
+    }
+
+    ul li {
+      margin-right: 10px;
+    }
+    .certificates {
+      display: none;
+    }
+
+    section {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 20px;
+      display: flex;
+      flex-direction: column;
+      align-content: center;
+
+      div {
+        margin: 0 auto 0 auto;
+        width: auto;
+      }
+      video {
+        border: 1px solid black;
+
+        width: 100%;
+        box-shadow: 1px 3px 10px grey;
+        margin-bottom: 20px;
+
+      }
+    }
+  }
+
 }
 
 

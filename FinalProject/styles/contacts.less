@@ -42,5 +42,26 @@ section#content {
       font-family: "Segoe UI", sans-serif;
     }
   }
+  div#map1 {
+    display: none;
+  }
 
+}
+
+@media all and (max-width: 640px) {
+  section#content {
+    width: 95%;
+    flex-direction: column;
+    div#map {
+      display: none;
+    }
+    div#map1 {
+      display: block;
+      margin-left: 20px;
+      img {
+        width: 100%;
+      }
+    }
+
+  }
 }

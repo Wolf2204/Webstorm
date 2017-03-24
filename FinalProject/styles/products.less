@@ -27,8 +27,7 @@ section#content {
 
     > div {
       display: inline-block;
-      max-width: 32%;
-
+      width: 32%;
       height: 200px;
       margin-bottom: 20px;
       box-shadow: 0 3px 10px black;
@@ -88,6 +87,32 @@ section#content {
 
     }
 
+  }
+
+}
+
+@media all and (max-width: 640px) {
+  section#content {
+    width: 95%;
+
+    #photos > div {
+      width: 100%;
+
+      > div {
+        h4 {
+          min-height: 110px;
+
+        }
+        a {
+          margin-left: 10px;
+        }
+        button {
+          height: 50px;
+        }
+
+      }
+
+    }
   }
 
 }
