@@ -152,7 +152,6 @@ section#content section {
   margin-left: 30px;
 }
 section#content section video {
-  border: 1px solid black;
   height: 200px;
   box-shadow: 1px 3px 10px grey;
   margin-bottom: 20px;
@@ -171,20 +170,17 @@ section#content section video {
     width: 100%;
     margin-left: 0;
   }
-  section#content h2 {
-    margin-left: 10px;
-  }
   section#content p {
-    margin-left: 10px;
+    margin-right: 20px;
   }
   section#content h3 {
-    margin-left: 10px;
+    margin-right: 20px;
   }
   section#content ol {
-    margin-right: 10px;
+    margin-right: 20px;
   }
-  section#content ul li {
-    margin-right: 10px;
+  section#content ul {
+    margin-right: 20px;
   }
   section#content .certificates {
     display: none;
@@ -202,7 +198,7 @@ section#content section video {
     width: auto;
   }
   section#content section video {
-    border: 1px solid black;
+    height: auto;
     width: 100%;
     box-shadow: 1px 3px 10px grey;
     margin-bottom: 20px;
