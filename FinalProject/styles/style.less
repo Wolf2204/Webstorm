@@ -37,8 +37,11 @@ section#content {
     flex-direction: column;
 
     img {
-      margin: 20px 0 10px 20px;
+      margin: 30px 20px 10px 10px;
       height: 170px;
+      &:hover {
+        cursor: pointer;
+      }
     }
   }
 
@@ -58,35 +61,52 @@ section#content {
 @media all and (max-width: 640px) {
   section#content {
     flex-direction: column;
-    width: 95%;
+    width: 100%;
 
     div {
       width: 100%;
-      margin-right: auto;
-      margin-left: auto;
+      box-shadow: none;
+      border-radius: 0;
+      flex-direction: column;
 
       div {
+
         width: 100%;
+        margin-right: 0;
         margin-left: 0;
       }
     }
 
     p {
-      margin-right: 20px;
+      margin-right: 5px;
+      margin-left: 5px;
     }
     h3 {
-
-      margin-right: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
     }
     ol {
-      margin-right: 20px;
+      margin-right: 5px;
+      margin-left: 5px;
+      padding-left: 20px;
     }
 
-    ul{
-      margin-right: 20px;
+    ul {
+      margin-right: 5px;
+      margin-left: 5px;
+      padding-left: 20px;
     }
     .certificates {
       display: none;
+      /*width: 100%;
+      flex-direction: row;
+      justify-content: space-between;
+
+
+      img {
+        margin: 0;
+        height: 120px;
+      }*/
     }
 
     section {
@@ -98,14 +118,11 @@ section#content {
       align-content: center;
 
       div {
-        margin: 0 auto 0 auto;
         width: auto;
       }
       video {
         height: auto;
         width: 100%;
-        box-shadow: 1px 3px 10px grey;
-        margin-bottom: 20px;
 
       }
     }

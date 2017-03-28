@@ -21,6 +21,8 @@ section#content {
   h3 {
     text-align: center;
     text-shadow: 1px 1px 3px grey;
+    font-size: 16pt;
+
   }
   p {
     text-indent: 20px;
@@ -38,16 +40,24 @@ section#content {
 
 @media all and (max-width: 640px) {
   section#content {
-    width: 95%;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
     div {
-      margin-left: 20px;
-      margin-right: 20px;
+      margin-left: 5px;
+      margin-right: 5px;
       img#photo {
-        margin-left: 0;
+        margin-left: 20px;
       }
       > section img {
         width: 100%;
       }
+    }
+    h3 {
+      margin-top: 0;
+    }
+    ol {
+      padding-left: 20px;
     }
     div#map {
       display: none;

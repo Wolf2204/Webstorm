@@ -66,17 +66,39 @@ section#content {
 
 @media all and (max-width: 640px) {
   section#content {
-    width: 95%;
+    width: 100%;
+    border-radius: 0;
+    box-shadow: none;
+    h3 {
+      margin-bottom: 0;
+    }
+    ul {
+      padding-left: 15px;
+    }
+    div {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
+    img {
+      width: 100%;
+      &#graph {
+        width: 100%;
+      }
+    }
     iframe {
       width: 100%;
       height: 350px;
+      box-shadow: none;
     }
     table {
       width: 100%;
+      border: none;
+      background: black;
+      td {
+        border: none;
+      }
     }
-    div img#graph {
-      width: 100%;
-    }
+
   }
 
 }

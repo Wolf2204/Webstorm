@@ -18,6 +18,9 @@ header {
   p {
     display: none;
   }
+  button.hello {
+    display: none;
+  }
 
   div {
     display: flex;
@@ -51,6 +54,10 @@ header {
       text-align: center;
       height: 100%;
       margin: auto;
+      > a.active {
+        color: lightblue;
+
+      }
 
       a {
         text-decoration: none;
@@ -84,6 +91,16 @@ footer {
 }
 
 @media all and (max-width: 640px) {
+  div.menu {
+    display: none;
+    > ul {
+      margin-top: 0;
+    }
+  }
+  div.active {
+    display: inline;
+  }
+
 
   body {
     width: 100%;
@@ -93,9 +110,29 @@ footer {
 
   header {
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 0;
     width: 100%;
     margin-top: 0;
+    button.hello {
+      display: block;
+      height: 40px;
+      background: linear-gradient(peru, brown, peru);
+      font-weight: bold;
+      font-size: 15pt;
+      //width: 100px;
+      //margin-left: 2px;
+      cursor: pointer;
+      box-shadow: 0 0 2px black;
+      border: none;
+      &:hover {
+        box-shadow: inset 0 0 4px black;
+        text-shadow: 1px 1px 2px grey;
+
+      }
+      &:focus {
+        outline: none;
+      }
+    }
     p {
       display: block;
       width: 100%;
@@ -111,6 +148,7 @@ footer {
       &.logo {
         display: none;
 
+
       }
       &.menu {
         margin-top: 0;
@@ -123,17 +161,24 @@ footer {
       flex-direction: column;
       border-radius: 0;
       padding: 0;
-      height: 160px;
+      height: auto;
+      background: none;
+
 
       li {
         width: 100%;
         text-align: center;
         height: 40px;
         margin: 0;
+        background: linear-gradient(#292929, #7a7a7a, #292929);
 
       }
 
     }
+  }
+  footer {
+    height: auto;
+    padding: 10px 0 10px 0;
   }
 
 }

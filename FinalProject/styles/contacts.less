@@ -50,14 +50,20 @@ section#content {
 
 @media all and (max-width: 640px) {
   section#content {
-    width: 95%;
+    width: 100%;
     flex-direction: column;
+    border-radius: 0;
+    box-shadow: none;
+    div {
+      margin-left: 5px;
+      margin-right: 5px;
+    }
     div#map {
       display: none;
     }
     div#map1 {
       display: block;
-      margin-left: 20px;
+     margin-left: 5px;
       img {
         width: 100%;
       }

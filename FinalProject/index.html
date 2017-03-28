@@ -4,15 +4,18 @@
     <meta charset="UTF-8">
     <title>Технотон Трейд</title>
     <link rel="stylesheet" href="styles/style.css">
+
+
 </head>
 <body>
 
 <header>
-    <p>Технотон Трейд</p>
+    <p>Немного о нас</p>
+    <button class="hello">Меню</button>
     <div class="logo"><a href="index.html"><img src="images/logo.png" alt="logo"></a></div>
     <div class="menu">
         <ul>
-            <li><a href="index.html">
+            <li><a class="active" href="index.html">
                 <div>О компании</div>
             </a></li>
             <li><a href="products.html">
@@ -67,9 +70,9 @@
             </ol>
         </div>
         <div class="certificates">
-            <a href="images/file1.jpg" target="_blank"><img src="images/file1.jpg"></a>
-            <a href="images/file2.jpg" target="_blank"><img src="images/file2.jpg"></a>
-            <a href="images/file3.jpg" target="_blank"><img src="images/file3.jpg"></a>
+            <img class="pic" src="images/file1.jpg">
+            <img class="pic" src="images/file2.jpg">
+            <img class="pic" src="images/file3.jpg">
         </div>
     </div>
     <section>
@@ -95,6 +98,7 @@
 <footer>
     Все права защищены. &copy; Технотон Трейд - Эксперт в контроле топлива.
 </footer>
-
+<script src="js/menu.js"></script>
+<script src="js/picture.js"></script>
 </body>
 </html>
