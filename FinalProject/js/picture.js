@@ -13,10 +13,7 @@ function newImage(img) {
     var image = document.createElement('img');
     el.style.width = "100%";
     el.style.height = "100%";
-   // el.style.backgroundImage = 'url("+newSrc+")';
     el.style.backgroundColor = 'black';
-    //el.style.backgroundSize = 'contain';
-   // el.style.backgroundRepeat = 'no-repeat';
     el.style.position = 'fixed';
     el.style.zIndex = '9999';
     el.style.top = '0';
