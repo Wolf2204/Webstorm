@@ -63,7 +63,7 @@ makeRequest({
 
 });
 
-var inputNumber = document.querySelector('input.value');
+var inputNumber = document.querySelector('input#value');
 
 inputNumber.addEventListener('input', function () {
 
