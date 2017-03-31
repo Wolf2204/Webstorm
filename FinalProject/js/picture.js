@@ -1,33 +1,36 @@
-var picture = document.body.querySelector('.certificates');
+window.addEventListener('load', function () {
 
-picture.addEventListener('click', function () {
-    var target = event.target;
-    if (target.matches('img.pic')) {
-        newImage(target);
-    }
-});
+    var picture = document.body.querySelector('.certificates');
 
-function newImage(img) {
-    var newSrc = img.src.replace('images', 'large');
-    var el = document.createElement('div');
-    var image = document.createElement('img');
-    el.style.width = "100%";
-    el.style.height = "100%";
-    el.style.backgroundColor = 'black';
-    el.style.position = 'fixed';
-    el.style.zIndex = '9999';
-    el.style.top = '0';
-    el.style.left = '0';
-    image.src = newSrc;
-    el.appendChild(image);
-    image.style.height = '100%';
-    el.style.textAlign = 'center';
-
-
-    el.addEventListener('click', function () {
-        document.body.removeChild(el);
+    picture.addEventListener('click', function () {
+        var target = event.target;
+        if (target.matches('img.pic')) {
+            newImage(target);
+        }
     });
 
-    document.body.appendChild(el);
+    function newImage(img) {
+        var newSrc = img.src.replace('images', 'large');
+        var el = document.createElement('div');
+        var image = document.createElement('img');
+        el.style.width = "100%";
+        el.style.height = "100%";
+        el.style.backgroundColor = 'black';
+        el.style.position = 'fixed';
+        el.style.zIndex = '9999';
+        el.style.top = '0';
+        el.style.left = '0';
+        image.src = newSrc;
+        el.appendChild(image);
+        image.style.height = '100%';
+        el.style.textAlign = 'center';
 
-}
+
+        el.addEventListener('click', function () {
+            document.body.removeChild(el);
+        });
+
+        document.body.appendChild(el);
+
+    }
+});

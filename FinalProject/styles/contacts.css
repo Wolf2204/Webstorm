@@ -127,6 +127,7 @@ footer {
   }
   header div.menu {
     margin-top: 0;
+    height: 160px;
   }
   header ul {
     flex-direction: column;

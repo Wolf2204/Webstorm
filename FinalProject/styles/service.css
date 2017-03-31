@@ -127,6 +127,7 @@ footer {
   }
   header div.menu {
     margin-top: 0;
+    height: 160px;
   }
   header ul {
     flex-direction: column;
@@ -196,9 +197,6 @@ section#content div#map1 {
   }
   section#content div > section img {
     width: 100%;
-  }
-  section#content h3 {
-    margin-top: 0;
   }
   section#content ol {
     padding-left: 20px;
