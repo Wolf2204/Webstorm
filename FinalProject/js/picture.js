@@ -15,7 +15,7 @@ window.addEventListener('load', function () {
         var image = document.createElement('img');
         el.style.width = "100%";
         el.style.height = "100%";
-        el.style.backgroundColor = 'black';
+        el.style.backgroundColor = 'rgba(0, 0, 0, 0.9)';
         el.style.position = 'fixed';
         el.style.zIndex = '9999';
         el.style.top = '0';
