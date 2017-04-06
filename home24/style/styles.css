@@ -1,0 +1,69 @@
+#myElement > figure {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+    border: 2px solid black;
+    background: orange;
+    vertical-align: top;
+}
+
+.item {
+    background: orange;
+
+}
+.part {
+    background: lightgreen;
+}
+.click:hover {
+    box-shadow: 0 0 15px red;
+}
+#myElement .active {
+    border-color: red;
+}
+
+#myElement > figure::before{
+    content: attr(data-currency);
+    text-align: center;
+    font-weight: bold;
+
+
+}
+
+@keyframes remove {
+    from {
+        transform: scale(1);
+        opacity: 1;
+    }
+    to {
+        transform: scale(0.3);
+        opacity: 0.3;
+    }
+
+}
+#myElement > figure.remove {
+    animation: remove 0.2s cubic-bezier(0.1, 0.5, 0.4, 0.9) both;
+}
+
+/*#myElement p:nth-child(odd) img{
+    float: left;
+}
+#myElement p:nth-child(even) img{
+    float: right;
+}
+body {
+    font-size: 16pt;
+}
+
+.preview {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+}*/
