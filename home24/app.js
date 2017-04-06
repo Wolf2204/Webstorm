@@ -46,7 +46,6 @@ function result (element1) {
         var a = Number(response.Cur_OfficialRate);
         var b = Number(response.Cur_Scale);
         input.addEventListener('input', function () {
-                console.log(this);
                 var d = input.value * b / a;
                 $(div).text(d.toFixed(2));
             }
