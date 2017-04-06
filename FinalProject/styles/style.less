@@ -1,4 +1,15 @@
 @import "forAll";
+@keyframes large {
+  from {
+    transform: scale(0);
+    opacity: 0;
+
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 
 section#content {
   margin: 0 auto 10px auto;
@@ -39,6 +50,7 @@ section#content {
     img {
       margin: 30px 20px 10px 10px;
       height: 170px;
+
       &:hover {
         cursor: pointer;
       }

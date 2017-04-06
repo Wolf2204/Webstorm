@@ -148,6 +148,16 @@ footer {
     padding: 10px 0 10px 0;
   }
 }
+@keyframes large {
+  from {
+    transform: scale(0);
+    opacity: 0;
+  }
+  to {
+    transform: scale(1);
+    opacity: 1;
+  }
+}
 section#content {
   margin: 0 auto 10px auto;
   width: 98%;

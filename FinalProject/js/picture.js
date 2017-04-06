@@ -23,6 +23,7 @@ window.addEventListener('load', function () {
         image.src = newSrc;
         el.appendChild(image);
         image.style.height = '100%';
+        image.style.animation = 'large 0.5s linear';
         el.style.textAlign = 'center';
 
 
